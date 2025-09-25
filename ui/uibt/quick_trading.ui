@@ -24,7 +24,7 @@
 		"button_mappings": [
 			{
 				"from_button_id": "button.menu_select",
-				"to_button_id": "button.container_auto_place",
+				"to_button_id": "button.inventory_transfer_all",
 				"mapping_type": "pressed"
 			}
 		]
