@@ -1,0 +1,32 @@
+{
+	"namespace": "bt_quick_trading",
+	"quick_trade_icon": {
+		"type": "image",
+		"size": [
+			16,
+			16
+		],
+		"texture": "textures/ui/quick_trade"
+	},
+	"quick_trade_button@common_buttons.light_content_button": {
+		"size": [
+			18,
+			18
+		],
+		"offset": [
+			2,
+			0
+		],
+		"$button_content": "bt_quick_trading.quick_trade_icon",
+		"property_bag": {
+			"#collection_name": "trade2_result_item"
+		},
+		"button_mappings": [
+			{
+				"from_button_id": "button.menu_select",
+				"to_button_id": "button.container_auto_place",
+				"mapping_type": "pressed"
+			}
+		]
+	}
+}
