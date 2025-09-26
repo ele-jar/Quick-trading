@@ -1,24 +1,17 @@
 {
   "namespace": "trade2_pocket",
-  "trade_and_help_buttons/how_to_play_button_holder": {
+  "arrow_panel": {
     "modifications": [
       {
-        "control_name": "how_to_play_button",
-        "operation": "remove"
+        "array_name": "controls",
+        "operation": "clear"
       },
       {
         "array_name": "controls",
-        "operation": "insert_back",
+        "operation": "insert_front",
         "value": [
           {
-            "quick_trade_button@bt_quick_trading.quick_trade_button": {
-              "size": [
-                32,
-                32
-              ],
-              "anchor_from": "right_middle",
-              "anchor_to": "right_middle"
-            }
+            "trade_arrow_button@bt_quick_trading.trade_arrow_button": {}
           }
         ]
       }
