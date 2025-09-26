@@ -1,32 +1,35 @@
 {
-	"namespace": "bt_quick_trading",
-	"quick_trade_icon": {
-		"type": "image",
-		"size": [
-			16,
-			16
-		],
-		"texture": "textures/ui/quick_trade"
-	},
-	"quick_trade_button@common_buttons.light_content_button": {
-		"size": [
-			18,
-			18
-		],
-		"offset": [
-			2,
-			0
-		],
-		"$button_content": "bt_quick_trading.quick_trade_icon",
-		"property_bag": {
-			"#collection_name": "trade2_result_item"
-		},
-		"button_mappings": [
-			{
-				"from_button_id": "button.menu_select",
-				"to_button_id": "button.inventory_transfer_all",
-				"mapping_type": "pressed"
-			}
-		]
-	}
+  "namespace": "bt_quick_trading",
+
+  "trade_arrow_texture@common_tessellator.tessellator_renderer": {
+    "size": [ 22, 20 ],
+    "uv": [ 86, 17 ],
+    "uv_size": [ 22, 20 ],
+    "texture": "textures/ui/trade_icon"
+  },
+
+  "trade_arrow_button": {
+    "type": "button",
+    "size": [ 22, 20 ],
+    "property_bag": {
+      "#collection_name": "trade2_result_item"
+    },
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.container_auto_place",
+        "mapping_type": "pressed"
+      }
+    ],
+    "controls": [
+      {
+        "arrow_texture": {
+          "type": "panel",
+          "controls": [
+            { "tessellator@bt_quick_trading.trade_arrow_texture": {} }
+          ]
+        }
+      }
+    ]
+  }
 }
